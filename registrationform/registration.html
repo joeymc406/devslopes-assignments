@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Registration form</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Registration Form></h1>
+		</header>
+		<hr />
+		<h2>Please enter your information</h2>
+		<form>
+			<label for="firstName">First Name:</label><br />
+			<input value="jon" type="text" id="firstName" name="firstName" required /><br /><br />
+
+			<label for="lastName">Last Name:</label><br />
+			<input type="text" id="lastName" name="lastName" required /><br /><br />
+
+			<label for="email">Email:</label><br />
+			<input type="email" id="email" name="email" required /><br /><br />
+
+			<h3>Enter your phone number</h3>
+			<input type="text" id="areaCode" name="areaCode" maxlength="3" size="3" />
+			<label for="areaCode">-</label><br />
+			<input type="text" id="firstPart" name="firstPart" maxlength="3" size="3" />
+			<label for="firstPart">-</label><br />
+			<input type="text" id="lastPart" name="lastPart" maxlength="4" size="4" /><br /><br />
+			<label for="lastPart"></label><br /><br /><br />
+
+			<label for="birthDate">DOB</label><br />
+			<input required type="text" id="birthDate" name="birthDate" placeholder="mm/dd/yyyy" />
+
+			<br /><br />
+
+			<input type="radio" id="male" name="gender" />
+			<label for="male">Male</label><br />
+			<input type="radio" id="female" name="gender" />
+			<label for="female">Female</label><br /><br />
+
+			<label for="relationship">Relationship status</label><br />
+			<select id="relationship" name="relationship">
+				<option value="single">Single</option>
+				<option value="married">Married</option>
+				<option value="divorced">Divorced</option></select
+			><br /><br />
+
+			<h4>Language Preference</h4>
+			<input type="checkbox" id="english" name="english" />
+			<label for="english">English</label>
+			<input type="checkbox" id="spanish" name="spanish" />
+			<label for="spanish">Spanish</label>
+			<input type="checkbox" id="other" name="other" />
+			<label for="other">Other</label>
+
+			<br /><br />
+
+			<label for="comments">Leave us your comments below</label><br />
+			<textarea id="comments" name="comments" rows="3" cols="30"> </textarea>
+
+			<br /><br />
+
+			<label for="terms"
+				>By checking this box , you agree to the<a href="https://www.w3schools.com">Terms and Conditons</a></label
+			><br />
+			<input type="checkbox" id="terms" name="terms" required />
+
+			<br /><br />
+
+			<input type="submit" />
+		</form>
+
+		<script src="" async defer></script>
+	</body>
+</html>
