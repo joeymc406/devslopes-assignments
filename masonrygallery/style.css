@@ -1,0 +1,114 @@
+/* Masonry Gallery Assignment */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.masonry-gallery {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+    color: white;
+    gap: 10px;
+}
+
+.mg-1 {
+    background-color: blue;
+    grid-row: 1 / 4;
+    grid-column: 1 / 6;
+}
+
+.mg-2 {
+    background-color: red;
+    grid-row: 4 / 10;
+    grid-column: 1 / 4;
+}
+
+.mg-3 {
+    background-color: purple;
+    grid-row: 10 / 12;
+    grid-column: 1 / 6;
+}
+
+.mg-4 {
+    background-color: yellow;
+    grid-row: 8 / 10;
+    grid-column: 4 / 6;
+}
+
+.mg-5 {
+    background-color: orange;
+    grid-row: 4 / 8;
+    grid-column: 4 / 6;
+}
+
+.mg-6 {
+    background-color: green;
+    grid-row: 1 / 10;
+    grid-column: 6 / 9;
+}
+
+.mg-7 {
+    background-color: lightblue;
+    grid-row: 10 / 12;
+    grid-column: 6 / 12;
+}
+
+.mg-8 {
+    background-color: limegreen;
+    grid-row: 3 / 10;
+    grid-column: 9 / 12;
+}
+
+.mg-9 {
+    background-color: darkred;
+    grid-row: 4 / 11;
+    grid-column: 12 / 17;
+}
+
+.mg-10 {
+    background-color: cyan;
+    grid-row: 11 / 12;
+    grid-column: 12 / 17;
+}
+
+.mg-11 {
+    background-color: teal;
+    grid-row: 3 / 4;
+    grid-column: 13 / 17;
+}
+
+.mg-12 {
+    background-color: tan;
+    grid-row: 3 / 4;
+    grid-column: 12 / 13;
+}
+
+.mg-13 {
+    background-color: darkgray;
+    grid-row: 1 / 3;
+    grid-column: 12 / 17;
+}
+
+.mg-14 {
+    background-color: darkblue;
+    grid-row: 1 / 3;
+    grid-column: 9 / 12;
+}
