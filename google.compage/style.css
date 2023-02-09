@@ -1,0 +1,84 @@
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    text-decoration-color: black;
+    margin: 10px;
+}
+
+input {
+    width: 480px;
+}
+img {
+    margin-top: 7px;
+}
+
+.parent-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.googleheader-container {
+    position: relative;
+    height: 150px;
+}
+
+.header-component {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerleft-item {
+    width:fit-content;
+}
+
+.headerright-item {
+    width: fit-content;
+}
+
+
+.googlelogo-container {
+    position: relative;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.googlesearchbar-container {
+    position: relative;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-component {
+    width: 560px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.googleplaceholder-container {
+    position: relative;
+    height: 150px;
+}
+
+
+
+.googlefooter-container {
+    position: relative;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
