@@ -13,3 +13,153 @@ button {
 
 img { max-width: 100%; }
 
+.home-container {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.hero {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: 
+	"hero hero skate1"
+	"hero hero skate2";
+}
+
+.hero-header {
+	grid-area: hero;
+	background: url("images/hero-skateboard.jpeg");
+	min-height: 400px;
+	background-size: cover;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	background-position: bottom right;
+}
+
+.hero-header > * {
+	background-color: white;
+	padding: 5px;
+}
+
+.cta {
+	background-color: #333;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	color: white;
+}
+
+.cta p:first-child {
+	font-size: 20px;
+}
+
+.cta p {
+	margin: 0;
+}
+
+.price {
+	font-size: 50px;
+	font-weight: 300;
+}
+
+.skate-1 {
+	grid-area: skate1;
+}
+
+.skate-2 {
+	grid-area: skate2;
+}
+
+.menu ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	list-style: none;
+	grid-gap: 10px;
+	padding: 0;
+}
+
+.menu a {
+	display: block;
+	text-align: center;
+	background-color: #333;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+[aria-controls="menu-list"] {
+	display: none;
+}
+
+.features {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 20px;
+}
+
+.feature {
+	background-color: white;
+	box-shadow: 0 0 5px #333;
+	text-align: center;
+	padding: 10px;
+}
+
+.feature .icon {
+	height: 120px;
+	width: 120px;
+}
+
+.feature p {
+	color: grey;
+}
+
+.learn-more, .learn-more-alt {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0 40px;
+	padding: 50px;
+	align-items: center;
+
+}
+
+.learn-more h2 {
+	margin-top: 0;
+}
+
+.learn-more-alt img {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.skate-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 20px;
+}
+
+.skate-gallery h2:before, .skate-gallery h2:after {
+	display: block;
+	content: "";
+	height: 20px;
+	background: linear-gradient(to left, #333, transparent);
+}
+
+.skate-gallery h2:after {
+	background: linear-gradient(to right, #333, transparent);
+}
+
+.skate-gallery h2 {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	grid-column: 1 / -1;
+	grid-gap: 20px;
+	align-items: center;
+
+}
