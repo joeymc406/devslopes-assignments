@@ -4,8 +4,8 @@ body {
 }
 
 button {
-  background: #333;;
-  border: 0;
+  	background: #333;;
+	border: 0;
 	padding: 10px 20px;
 	color: white;
 	border-radius: 5px;
@@ -16,6 +16,8 @@ img { max-width: 100%; }
 .home-container {
 	display: grid;
 	grid-gap: 20px;
+	max-width: 1200px;
+	margin: auto;
 }
 
 .hero {
@@ -123,10 +125,9 @@ img { max-width: 100%; }
 .learn-more, .learn-more-alt {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 0 40px;
+	grid-gap: 40px;
 	padding: 50px;
 	align-items: center;
-
 }
 
 .learn-more h2 {
@@ -136,6 +137,10 @@ img { max-width: 100%; }
 .learn-more-alt img {
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
+}
+
+.learn-more-alt .about__details {
+	text-align: right;
 }
 
 .skate-gallery {
@@ -161,5 +166,69 @@ img { max-width: 100%; }
 	grid-column: 1 / -1;
 	grid-gap: 20px;
 	align-items: center;
+}
 
+@media (max-width: 700px) {
+	.hero {
+		grid-template-areas:
+		"hero hero "
+		"skate1 skate2";
+	}
+
+	.hero-header {
+		min-height: 300px;
+	}
+
+	.skate-1, .skate-2 {
+		text-align: center;
+	}
+
+	.learn-more, .learn-more-alt {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.learn-more-alt img {
+		grid-row: initial;
+		grid-column: initial;
+	}
+
+	.learn-more-alt .about-details {
+		text-align: center;
+	}
+
+	.menu {
+		order: -1;
+		perspective: 800px;
+	}
+
+	.menu ul {
+		max-height: 0;
+		overflow: hidden;
+		transform: rotateX(90deg);
+		transition: all 0.5s;
+	}
+
+	[aria-controls="menu-list"] {
+		display: block;
+		margin-bottom: 10px;
+	}
+ 
+	[aria-expanded="true"] ~ ul {
+		display: grid;
+		max-height: 500px;
+		transform: rotateX('0')
+	}
+
+	[aria-expanded="false"] .close {
+			display: none;
+	}
+
+	[aria-expanded="true"] .close {
+		display: inline-block;
+	}
+
+	[aria-expanded="true"] .open {
+			display: none;
+	}
 }
