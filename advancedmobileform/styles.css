@@ -1,0 +1,106 @@
+dark gray : #575658
+
+light gray: #C2C1C3;
+
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #575658;
+    margin-left: 10px;
+    font-size: 12;
+}
+
+.header img {
+    height: 10px;
+    width: 10px;
+    text-align: right;
+}
+
+
+img {
+    height: 20px;
+    width: 20px;
+}
+
+.parent-container {
+    display: grid;
+    justify-items: center;
+}
+
+.header {
+    height: 20px;
+    background-color: #5F18C1;
+}
+
+.mobile-form-container {
+    max-width: 350px;
+    width: 100%;
+}
+
+.mobile-form {
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    justify-items: center;
+    gap: 25px;
+
+}
+
+.nav-container {
+    background-color: #731EE7;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.form-item {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    width: 100%; 
+    height: 48px;
+    border: 2px solid red;
+}
+
+.form-item img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.nav-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.name-input {
+    background-color: #C2C1C3;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #575658;
+    text-decoration-color: #575658;
+    height: 100%;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.form-item .phone-number {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+
+
