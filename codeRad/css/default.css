@@ -7,16 +7,37 @@
     --font-color-link : #57a6ff;
     --footer: #34314b;
     --footer-base: #2e2b45;
-    --contrast: #b0aebe;
+    --contrast: rgba(246, 248, 249, 0.8);
     --success: #64ecf5;
     --danger: #ff8b8d;
     --gradient-1: #a1ecff;
     --gradient-2: #7dbcff;
+
+    /* sizing */
+    --size-6: 0.375rem;
+    --size-7: 0.475rem;
+    --size-10: 0.625rem;
+    --size-12: 0.75rem;
+    --size-14: 0.875rem;
+    --size-19: 0.938rem;
+    --size-16: 1rem;
+    --size-18: 1.125rem;
+    --size-20: 1.25rem;
+    --size-26: 1.75rem;
+    --size-30: 1.875rem;
+    --size-40: 2.5rem;
+    --size-50: 3.125rem;
+    --size-100: 6.25rem;
+    --size-150: 9.375rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: "open sans", sans-serif;
-    font-size: 0.875rem;
+    font-size: var(--size-14);
     font-weight: 400;
     line-height: 1.6;
     letter-spacing: 0;
@@ -44,7 +65,7 @@ p {
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: var(--size-26);
     font-weight: 500;
     line-height: 1.2;
 }
@@ -58,8 +79,8 @@ img {
 
 .container {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0.938rem;
+    padding-right: 0.938rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -73,17 +94,40 @@ img {
     user-select: none;
     background-color: transparent;
     border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    border-radius: 1.25rem;
+    padding: var(--size-6) var(--size-12);
+    border-radius: var(--size-20);
     transition: 0.3s;
 }
 
-.bte-white {
+.btn-primary {
+    background-image: linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 100%);
+    border: 1px solid var(--gradient-1);
+    box-shadow: 0 10px 29px rgba( 161, 236, 255, 0.5);
+    transition: ease-in-out 0.3s;
+    color: var(--white);
+    padding: 0.4375rem, 1.5625rem;
+}
+
+.btn-white {
     background-color: var(--white);
     color: var(--font-color-link);
-    padding: 0.475rem 1.75rem;
-    box-shadow: 0 0.625rem 1.26rem rgba(255, 255, 255, 0.35);
+    padding: var(--size-7) var(--size-12);
+    box-shadow: 0 var(--size-10) var(--size-20) rgba(255, 255, 255, 0.35);
 
+}
+
+@media (min-width: 768px) {
+    .pricing-table,
+    .testimonial-grid,
+    .footer-bottom-wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    footer .container {
+        max-width: 960px;
+    }
 }
 
 @media (min-width: 1200px) {
