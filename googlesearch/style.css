@@ -1,0 +1,268 @@
+:root {
+    --blue-color: #4285f4;
+    --grey-color: #727477;
+    --dark-grey-color: #5A5B5D;
+    --light-grey-color: #9A9C9E;
+    --dark-blue-color: #452CDF;
+    --red-color: #db4437;
+    --green-color: #0f9d58;
+    --light-grey-color: lightgray ;
+    --link-color: #1a0dab;
+}
+
+
+
+/* icon styling */
+
+ul li {
+    list-style: none;
+    font-family: 'Roboto', sans-sarif;
+}
+
+p {
+    display: inline-block;
+    padding: 0;
+    margin: 0 0;
+    border: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-sarif;
+}
+
+span {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+    width: 100%;
+}
+
+.header-logo-container img {
+    height: 100px;
+    margin: 0 60px;
+}
+
+.search-bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.search-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px var(--dark-grey-color);
+    border-radius: 22px;
+    height: 44px;
+    width: 690px;
+}
+
+.search-input-container img {
+    color: var(--blue-color);
+}
+
+.search-input {
+    display: flex;
+    flex-direction: row;
+    gap: 320px;
+    align-items: center;
+    border-right: 2px solid var(--light-grey-color);
+}
+
+.search-input p {
+    margin-left: 18px;
+    font-size: 20px;
+    padding: 4px 0;
+}
+
+.search-input i {
+    padding: 0 12px;
+}
+
+.search-options-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 18px;
+    gap: 18px;
+}
+
+.menu-profile-container {
+    float: right;
+    margin-left: 300px;
+}
+
+.profile-image {
+    width: 36px;
+}
+
+.options-bar-parent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    width: 690px;
+    margin-left: 240px;
+}
+
+.options-bar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.tool-bar-container {
+    display: flex;
+    flex-direction: row;
+    gap: 18px
+}
+
+.search-result {
+    width: 690px;
+    margin-left: 236px;
+}
+
+.search-result p {
+    font-size: 20px;
+}
+
+.search-result-link p {
+    font-size: 20px;
+}
+
+.website-link {
+    color: var(--dark-grey-color);
+}
+
+.supplemental-link-info {
+    color: var(--grey-color);
+}
+
+.search-result-title p {
+    font-size: 30px;
+    color: var(--link-color);
+}
+
+.search-results-body p {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-result {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.search-result-link, .search-result-title, .search-result-body {
+    margin: 4px;
+}
+
+.alternate-search-container {
+    width: 650px;
+    border-radius: 10px;
+}
+
+.alternate-search-table {
+    width: 100%;
+    border: 1px solid var(--light-grey-color);
+    border-radius: 6px;
+    border-spacing: 0;
+
+}
+
+.alternate-search-table tr {
+    height: 42px;
+}
+
+.alternate-search-table td, .alternate-search-table th {
+    border-bottom: 1px solid var(--light-grey-color);
+    padding: 10px;
+
+}
+
+.alternate-search-table th {
+    text-align: left;
+    font-size: 22px;
+}
+
+.alternate-search-table td {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.alternate-search-table tr:last-child > td {
+    border-bottom: none;
+}
+
+td, i {
+    text-align: right;
+}
+
+.google-search-footer {
+    width: 450px;
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-next-page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    gap: 1px;
+}
+
+.g {
+    color: var(--blue-color);
+}
+
+.o {
+    color: #f4b400;
+}
+
+.l {
+    color: var(--green-color);
+}
+
+.e {
+    color: var(--red-color);
+}
+
+.footer-option-link {
+    margin-right: 20px;
+    font-size: 18px;
+    color: var(--blue-color);
+}
+
+.footer-next-page, h3 {
+    color: #4285f4;
+    font-size: 22px;
+    margin-left: 10px;
+    margin-bottom: 80px;
+}
+
+.page-numbers {
+    font-size: 36;
+    font-weight: 500;
+    color: var(--blue-color);
+}
