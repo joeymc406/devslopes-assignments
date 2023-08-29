@@ -1,4 +1,5 @@
 {
 	"workbench.colorTheme": "Monokai Dimmed",
-	"workbench.preferredHighContrastColorTheme": "GitHub Dark Default"
+	"workbench.preferredHighContrastColorTheme": "GitHub Dark Default",
+	"liveServer.settings.port": 5501
 }

@@ -5,7 +5,6 @@
     left: 0;
     z-index: 500;
     transition: ease-in-out 0.3s;
-    
 }
 
 .navbar.sticky {
